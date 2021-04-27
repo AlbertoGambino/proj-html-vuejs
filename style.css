@@ -9,6 +9,7 @@
   height: 100vh;
   width: 100vw;
   background-image: url('img/home-banner.jpg');
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +38,11 @@
   margin-top: 20px;
   font-weight: bold;
   font-size: 20px;
+}
+
+.cta-wp:hover{
+  color: white;
+  border: 1px solid white;
 }
 
 .overbody{
@@ -112,4 +118,73 @@
   width: 830px;
   text-align: center;
   line-height: 30px;
+}
+
+.signup{
+  width: 100%;
+  min-height: 400px;
+  background-color: #212425;
+}
+
+.container-signup{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  padding: 100px 10px;
+}
+
+.signup-left{
+  width: 50%;
+}
+
+.signup-left img{
+
+  width: 90%;
+  height: 90%;
+  transition: all 0.5s ease;
+}
+
+.signup-left img:hover{
+
+  transform: scale(1.05);
+}
+
+.signup-right{
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-cta{
+  color: white;
+  font-size: 23px;
+  font-weight: bolder;
+  padding-bottom: 35px;
+}
+
+.signup-right input{
+  background-color: #212425;
+  border: 1px solid #aeafae;
+  color: white;
+  height: 40px;
+  width: 120%;
+}
+
+.signup-right span{
+  color: #aeafae;
+  margin-bottom: 20px;
+}
+
+.space-signup{
+  padding-top: 20px;
+}
+
+.start-signup{
+  width: 120%;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  background-color: #d5625f;
+  margin-top: 40px;
+  font-weight: bold;
 }
