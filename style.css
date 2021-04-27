@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .slogan{
@@ -26,6 +27,7 @@
   color: white;
   font-size: 22px;
   margin: 20px 0;
+
 }
 
 .cta-wp{
@@ -35,4 +37,79 @@
   margin-top: 20px;
   font-weight: bold;
   font-size: 20px;
+}
+
+.overbody{
+  width: 90%;
+  margin: auto;
+  z-index: 100;
+}
+
+.header{
+
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  z-index: 100;
+  position: absolute;
+  top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.header img{
+  margin-left: 20px;
+  margin-top: 55px;
+}
+
+.header-left, .header-right{
+  width: 50%;
+  color: white;
+
+}
+
+.header-right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-right span{
+  padding: 22px;
+  margin-top: 50px;
+}
+
+.header-right span:hover{
+
+  color: #d5625f;
+}
+
+.spacer{
+  height: 400px;
+  background-color: #252a2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.world{
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.divider{
+  margin: 30px 0;
+}
+
+.red{
+  color: #d5625f;
+  padding: 5px;
+}
+
+.worldp{
+  color: #aeafae;
+  width: 830px;
+  text-align: center;
+  line-height: 30px;
 }
