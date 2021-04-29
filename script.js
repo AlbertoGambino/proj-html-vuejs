@@ -28,7 +28,7 @@ function hfVue (){
 
 function init() {
 
-    console.log('hello world');
+    
 
     hfVue()
 }
