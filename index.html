@@ -9,11 +9,18 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
   </head>
   <body>
+    <div id="app">
+
+
     <div class="wallpaper">
 
       <div class="slogan">NO PAIN NO GAIN</div>
@@ -35,12 +42,12 @@
         </div>
         <div class="header-right">
 
-          <span>HOME</span>
-          <span>ABOUT US</span>
+          <span v-for="header in headers">{{header}}</span>
+          <!-- <span>ABOUT US</span>
           <span>FACILITIES</span>
           <span>MEMBERSHIP</span>
           <span>TESTIMONIALS</span>
-          <span>BLOG</span>
+          <span>BLOG</span> -->
 
         </div>
       </div>
@@ -460,6 +467,7 @@
 
         <img src="img/divider-xx-red.png" alt="">
 
+
       </div>
       <div class="performance-cardcollector">
 
@@ -468,6 +476,17 @@
           <div class="performance-card-img">
 
             <img src="img/blog1.jpg" alt="">
+
+            <div class="layover">
+
+              <div class="layover-icons">
+
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+
+              </div>
+
+            </div>
 
           </div>
           <div class="performance-card-description">
@@ -491,6 +510,16 @@
           <div class="performance-card-img">
 
             <img src="img/blog6.jpg" alt="">
+            <div class="layover">
+
+              <div class="layover-icons">
+
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+
+              </div>
+
+            </div>
 
           </div>
           <div class="performance-card-description">
@@ -514,6 +543,16 @@
           <div class="performance-card-img">
 
             <img src="img/trainer4.jpg" alt="">
+            <div class="layover">
+
+              <div class="layover-icons">
+
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+
+              </div>
+
+            </div>
 
           </div>
           <div class="performance-card-description">
@@ -537,6 +576,16 @@
           <div class="performance-card-img">
 
             <img src="img/blog4.jpg" alt="">
+            <div class="layover">
+
+              <div class="layover-icons">
+
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+
+              </div>
+
+            </div>
 
           </div>
           <div class="performance-card-description">
@@ -560,6 +609,16 @@
           <div class="performance-card-img">
 
             <img src="img/trainer3.jpg" alt="">
+            <div class="layover">
+
+              <div class="layover-icons">
+
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+
+              </div>
+
+            </div>
 
           </div>
           <div class="performance-card-description">
@@ -583,6 +642,16 @@
           <div class="performance-card-img">
 
             <img src="img/trainer1.jpg" alt="">
+            <div class="layover">
+
+              <div class="layover-icons">
+
+                <i class="fas fa-link"></i>
+                <i class="fas fa-search"></i>
+
+              </div>
+
+            </div>
 
           </div>
           <div class="performance-card-description">
@@ -733,10 +802,10 @@
 
         <div class="copyright">
 
-          <span class="copyright-span">© Copyright 2012 - 2021</span>
-          <span class="copyright-span">Avada Theme by Theme Fusion</span>
+          <span v-for="footer in footers" class="copyright-span">{{footer}}</span>
+          <!-- <span class="copyright-span">Avada Theme by Theme Fusion</span>
           <span class="copyright-span">All Right reserved</span>
-          <span class="copyright-span">Powered by WordPress</span>
+          <span class="copyright-span">Powered by WordPress</span> -->
 
         </div>
         <div class="footer-icons">
@@ -763,6 +832,6 @@
 
     </div>
 
-
+  </div>
   </body>
 </html>

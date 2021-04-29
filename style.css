@@ -165,10 +165,18 @@
 
 .signup-right input{
   background-color: #212425;
-  border: 1px solid #aeafae;
+  border: 1px solid #6b6b6b;
   color: white;
   height: 40px;
   width: 120%;
+  opacity: 1;
+
+  transition: all 1s ease;
+}
+
+.signup-right input:hover{
+
+  opacity: 0.5;
 }
 
 .signup-right span{
@@ -227,16 +235,18 @@
 
   text-align: center;
   padding-bottom: 20px;
+
 }
 
 .card-icon i{
+
   border: 1px solid #d5625f;
   border-radius: 100%;
   color: #d5625f;
   font-size: 40px;
-  padding: 20px;
-
-
+  padding-top: 30px;
+  height: 100px;
+  width: 100px;
 }
 
 .card-title{
@@ -539,6 +549,52 @@ padding-bottom: 30px;
   height: 100%;
 }
 
+.performance-card-img{
+  position: relative;
+}
+
+.layover{
+
+  background-color: rgba(213, 98, 95, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  z-index: 150;
+
+  transition: all 0.5s ease;
+  visibility: hidden;
+}
+
+.layover-icons{
+  height: 100%;
+  width: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+
+.layover-icons i{
+  font-size: 30px;
+  padding: 10px;
+  display: none;
+}
+
+.performance-card-img:hover .layover, .layover-icons{
+  width: 100%;
+  display: flex;
+  visibility: visible;
+
+}
+
+.performance-card-img:hover .layover-icons i{
+  display: flex;
+}
+
 #card4{
   position: relative;
   bottom: 165px;
@@ -615,10 +671,17 @@ padding-bottom: 30px;
 
 .achieve-button{
 
-  border: 1px solid white;
+  border: 1px solid #aeafae;
   padding: 15px 40px;
   color: #aeafae;
   font-weight: bold;
+
+  transition: all 1s ease;
+}
+
+.achieve-button:hover{
+  border: 1px solid white;
+  color: white;
 }
 
 .contacts{
@@ -697,6 +760,17 @@ padding-bottom: 30px;
 
   padding-bottom: 20px;
 
+}
+
+.contact img{
+
+  transition: all 0.5s ease;
+}
+
+.contact img:hover{
+
+  transform: scale(1.05);
+  box-shadow: 5px 5px 20px black;
 }
 
 .footer{
