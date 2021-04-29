@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
 }
 
 .slogan{
@@ -48,7 +49,8 @@
 .overbody{
   width: 90%;
   margin: auto;
-  z-index: 100;
+  z-index: 200;
+
 
 }
 
@@ -97,6 +99,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .world{
@@ -536,6 +539,13 @@ padding-bottom: 30px;
   padding-bottom: 15px;
   padding-top: 10px;
   font-size: 22px;
+
+  transition: all 0.7s ease;
+}
+
+.performance-card-description-h:hover{
+
+  color: #d3615e;
 }
 
 .performance-card-description-p{
@@ -817,6 +827,7 @@ padding-bottom: 30px;
   background-color: #d5625f;
   border-radius: 2px;
   color: white;
+  position: relative;
 }
 
 .footer-icons-tw{
@@ -825,6 +836,7 @@ padding-bottom: 30px;
   border-radius: 2px;
   color: white;
   margin: 0 5px;
+  position: relative;
 
 }
 
@@ -833,5 +845,33 @@ padding-bottom: 30px;
   background-color: #d5625f;
   border-radius: 2px;
   color: white;
+  position: relative;
 
+}
+
+.footer-icons-fb span, .footer-icons-tw span, .footer-icons-in span{
+
+  position: absolute;
+  font-size: 0.5rem;
+  top: -20px;
+  left: 0;
+  background-color: #252a2d;
+  width: 100%;
+  border-radius: 2px;
+  padding: 1px;
+  display: none;
+
+}
+
+.footer-icons-tw span{
+  padding-left: 6px;
+}
+
+.footer-icons-fb span{
+  padding-right: 3px;
+}
+
+.footer-icons-fb:hover span, .footer-icons-tw:hover span, .footer-icons-in:hover span{
+
+  display: block;
 }
